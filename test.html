@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My page!</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                background-color: gray;
+                border-radius: 3px;
+                padding: 2px;
+                margin-left: 20px;
+            }
+            li:hover {
+                background-color: red;
+            }
+            a {
+                text-decoration: none;
+            }
+            .f-box {
+                display: flex;
+            }
+            .f-box div {
+                width: 100%;
+                margin: 1px;
+            }
+            .f-box.sales div{
+                background: gray;
+            }
+            .f-box.closeouts div{
+                background: red;
+            }
+            #frank {
+                font-size: 200%;
+            }
+
+            li:first-child {
+                margin-left: 0;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="locations.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="directions.html">Directions</a></li>
+
+                </ul>
+            </nav>
+            <h1>Contact</h1>
+        </header>
+        <section id="frank" class="f-box sales">
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+        </section>
+        <section class="f-box closeouts">
+            <div>d</div>
+            <div>e</div>
+        </section>
+        <footer>footer</footer>
+    </body>
+</html>
